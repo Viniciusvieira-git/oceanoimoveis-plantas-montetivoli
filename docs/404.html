@@ -1002,7 +1002,7 @@
     window.addEventListener("resize", syncBackToFilter);
 
     async function init() {
-      const response = await fetch("data/units.json");
+const response = await fetch("data/units.json?v=2");
       state.units = await response.json();
       renderGallery();
       renderPlantFilter();

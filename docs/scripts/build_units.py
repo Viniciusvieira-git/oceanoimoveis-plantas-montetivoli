@@ -24,13 +24,12 @@ STATUS_RE = re.compile(r"(Dispon.vel|Reservada|Bloqueada|Vendida)R\$")
 HEAD_RE = re.compile(r"^(\d{3,4})\s+([\d,]+)\s*m.?(.*)$")
 PRICE_RE = re.compile(r"R\$\s*([\d\.]+,\d{2})")
 
-
 COLUMN_META = {
     "01": {
         "tipologia": "2 quartos com suite",
         "tipologia_curta": "2Q com suite",
-        "posicao_solar": "tarde",
-        "posicao_solar_label": "Sol da tarde",
+        "posicao_solar": "manha",
+        "posicao_solar_label": "Sol da manha",
         "planta": "assets/plants/area-53-54.jpg",
         "colunas_planta": "01, 03, 06 e 08",
     },
@@ -69,8 +68,8 @@ COLUMN_META = {
     "06": {
         "tipologia": "2 quartos com suite",
         "tipologia_curta": "2Q com suite",
-        "posicao_solar": "manha",
-        "posicao_solar_label": "Sol da manha",
+        "posicao_solar": "tarde",
+        "posicao_solar_label": "Sol da tarde",
         "planta": "assets/plants/area-53-54.jpg",
         "colunas_planta": "01, 03, 06 e 08",
     },
